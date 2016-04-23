@@ -492,17 +492,49 @@ Every turn:
 Button is a kind of thing. A button can be push.
 Button EG is a kind of Button.
 After pushing Button EG :
+	if the location of Ball is location of player:
+		now Ball is in Elevator0_e0;
 	now the player is in Elevator0_e0;
 	say "Sie befinden sich im Erdgeschoss."
 Button 1 OG is a kind of Button.
 After pushing Button 1 OG:
+	if the location of Ball is location of player:
+		now Ball is in Elevator1_e0;
 	now the player is in  Elevator1_e0;
 	say "Sie befinden sich im ersten Obergeschoss."
 Button 2 OG is a kind of Button.
 After pushing Button 2 OG:
+	if the location of Ball is location of player:
+		now Ball is in Elevator2_e0;
 	now the player is in Elevator2_e0;
 	say "Sie befinden sich im zweiten Obergeschoss."
+
 Button EG, Button 1 OG, Button 2 OG is in every elevator.
+
+[Ball]
+[Rollt der Ball die Trepper herunter, so landet er im Raum VOR der Treppe einen Stockwerk weiter unten.]
+Ball is an object in Kaminzimmer. "Der Ball kann gerollt werden."
+It is pushable between rooms. 
+
+Every turn:
+	if the location of Ball is Stairway2_w0:
+		now Ball is in Hallway1_w1;
+		say "Der Ball rollt die Treppe runter.";
+	otherwise if the location of Ball is Stairway2_e0:
+		now Ball is in Hallway1_e1;
+		say "Der Ball rollt die Treppe runter.";
+	otherwise if the location of Ball is Stairway2_e1:
+		now Ball is in Hallway1_e11;
+		say "Der Ball rollt die Treppe runter.";
+	otherwise if the location of Ball is Stairway1_w0:
+		now Ball is in Hallway0_w0;
+		say "Der Ball rollt die Treppe runter.";
+	otherwise if the location of Ball is Stairway1_e0:
+		now Ball is in Hallway0_e0;
+		say "Der Ball rollt die Treppe runter.";
+	otherwise if the location of Ball is Stairway1_e1:
+		now Ball is in Hallway0_e12;
+		say "Der Ball rollt die Treppe runter.";
 
 
 [Raum 029door is a door. Raum 029door is south of Hallway0_e3. South of the Raum 029door is a room called Raum 029.
