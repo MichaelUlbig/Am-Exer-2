@@ -473,6 +473,20 @@ Stairway1_e0 is below Stairway2_e0.
 Stairway1_e1 is below Stairway2_e1.
 
 [Schrittzähler]
+Zaehler EG is a number variable.
+Zaehler 1OG is a number variable.
+Zaehler 2OG is a number variable.
+
+Every turn:
+	If player is in EG:
+		Increase Zaehler EG by 1;
+		say "Zaehler EE: ", Zaehler EG;
+	Otherwise if player is in Erstes OG:
+		Increase Zaehler 1OG by 1;
+		say "Zaehler 1OG: ", Zaehler 1OG;
+	Otherwise if player is in Zweites OG:
+		Increase Zaehler 2OG by 1;
+		say "Zaehler 2OG: ", Zaehler 2OG;
 
 [Elevators]
 Button is a kind of thing. A button can be push.
