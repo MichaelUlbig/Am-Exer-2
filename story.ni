@@ -556,7 +556,30 @@ Key B is in the locker. The description is "Studentenausweis".
 Key C is a thing.
 Key C is in the locker. The description is "Schlüssel ".
 
-
+[GEIST MECHANISMUS START]
+A Ghost is a kind of person.
+Geist is a Ghost.
+Geist is in Raum 029.
+ 
+Geist has a number called dirFolgtEinGeist.
+ 
+Carry out of going to Raum 029:
+	If the Location of Geist is Raum 029:
+		now the dirFolgtEinGeist of Geist is 1;
+		say "Ahhhhhhhhhhhh ein Geist!";
+ 
+Carry out going to a room:
+	If dirFolgtEinGeist of Geist is 1 :      
+		Move Geist to location of Player;
+		say "Der Geist verfolgt mich!";
+   
+Carry out going to Kaminzimmer 136:
+	If dirFolgtEinGeist of Geist is 1:
+		Move Geist to Raum 029;
+		now the dirFolgtEinGeist of Geist is 0;
+		say "Der Kamin hat den Geist aufgesaugt. Der Geist folgt mir nicht mehr. Ich solllte aber trotzdem vorsichtig sein!";
+   
+[GEIST MECHANISMUS END]
 
 Raum 029door is locked.
 lock is a part of the Raum 029 door.The description is "Schloss"
