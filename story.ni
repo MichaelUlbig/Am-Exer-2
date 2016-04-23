@@ -1,0 +1,528 @@
+"Am Exer 2" by Gruppe 12
+
+Use MAX_STATIC_DATA of 1800000.
+
+The player is in Unterm Torbogen.
+
+A hallway is a kind of room with the description "Ein Abschnitt des Flurs."
+A stairway is a kind of room with the description "Ein Treppenhaus."
+A restroomM is a kind of room with the description "Die Herrentoilette."
+A restroomW is a kind of room with the Description "Die Damentoilette."
+A laboratory is a kind of room with the description "Ein Labor."
+An elevator is a kind of room with the description "Ein Aufzug."
+An outside room is a kind of room with the description "Draußen."
+
+[Zur besseren Übersicht auf der Karte wurde der Innenhof hier erstellt. Er kann auch auskommentiert werden.]
+[Innenhof is an outside room.]
+
+[EG west]
+
+Hallway0_w0 is a hallway.
+Stairway0_w0 is a stairway.
+Stairway0_w0 is north of Hallway0_w0.
+
+Hallway0_w1 is a hallway.
+Labor 051 is a laboratory.
+WC0_w0 is a restroomM.
+Labor 051 is south of Hallway0_w1.
+WC0_w0 is north of Hallway0_w1.
+
+Hallway0_w2 is a hallway.
+Raum 052 is a room.
+Raum 059 is a room.
+Raum 052 is south of Hallway0_w2.
+Raum 059 is north of Hallway0_w2.
+
+Hallway0_w3 is a hallway.
+Labor 053 is a laboratory.
+Raum 058 is a room.
+Labor 053 is south of Hallway0_w3.
+Raum 058 is north of Hallway0_w3.
+
+Hallway0_w4 is a hallway.
+Raum 054 is a room.
+Labor 057 is a laboratory.
+Raum 054 is south of Hallway0_w4.
+Labor 057 is north of Hallway0_w4.
+
+Hallway0_w5 is a hallway. "Hier gibt es einen Kopierer und ein Kartenaufladegerät."
+Labor 055 is a laboratory.
+Labor 056 is a laboratory.
+Labor 055 is southeast of Hallway0_w5.
+Labor 056 is southwest of Hallway0_w5.
+
+Hallway0_w6 is a hallway.
+WC0_w1 is a restroomW.
+Raum 074 is a room.
+WC0_w1 is east of Hallway0_w6.
+Raum 074 is west of Hallway0_w6.
+
+Hallway0_w7 is a hallway.
+Labor 075 is a laboratory.
+Labor 075 is west of Hallway0_w7.
+
+Hallway0_w8 is a hallway.
+Raum 072 is a room.
+Raum 076 is a room.
+Raum 072 is east of Hallway0_w8.
+Raum 076 is west of Hallway0_w8.
+
+Hallway0_w9 is a hallway.
+ROBOCUP 071 is a laboratory. “Das Labor der RoboCup Forschungsgemeinschaft.”
+Raum 077 is a room.
+ROBOCUP 071 is east of Hallway0_w9.
+Raum 077 is west of Hallway0_w9.
+
+Hallway0_w10 is a hallway.
+Stairway0_w1 is a stairway.
+Labor 078 is a laboratory.
+Stairway0_w1 is east of Hallway0_w10.
+Labor 078 is west of Hallway0_w10.
+
+Hallway0_w11 is a hallway.
+Labor 085 is a laboratory.
+Raum 079 is a room.
+Labor 085 is east of Hallway0_w11.
+Raum 079 is west of Hallway0_w11.
+
+Hallway0_w12 is a hallway.
+Raum 084 is a room.
+Raum 080A is a room.
+Vorraum 080A is a room. "Ein kleiner Namenloser Vorraum zu Raum 080A."
+Raum 084 is east of Hallway0_w12.
+Raum 080A is west of Vorraum 080A.
+Vorraum 080A is west of Hallway0_w12.
+
+Hallway0_w13 is a hallway.
+Raum 081 is a room.
+Raum 081 is west of Hallway0_w13.
+
+Hallway0_w14 is a hallway.
+Raum 083 is a room.
+Raum 082 is a room.
+Raum 083 is east of Hallway0_w14.
+Raum 082 is west of Hallway0_w14.
+
+Hallway0_w1 is west of Hallway0_w0.
+Hallway0_w2 is west of Hallway0_w1.
+Hallway0_w3 is west of Hallway0_w2.
+Hallway0_w4 is west of Hallway0_w3.
+Hallway0_w5 is west of Hallway0_w4.
+Hallway0_w6 is north of Hallway0_w5.
+Hallway0_w7 is north of Hallway0_w6.
+Hallway0_w8 is north of Hallway0_w7.
+Hallway0_w9 is north of Hallway0_w8.
+Hallway0_w10 is north of Hallway0_w9.
+Hallway0_w11 is north of Hallway0_w10.
+Hallway0_w12 is north of Hallway0_w11.
+Hallway0_w13 is north of Hallway0_w12.
+Hallway0_w14 is north of Hallway0_w13.
+
+
+[EG ost]
+
+An elevator is a kind of room with the description "Ein Aufzug."
+Button is a kind of thing. A button can be push.
+Button EG is a kind of Button.
+After pushing Button EG :
+	now the player is in Elevator0_e0;
+	say "Sie befinden sich im Erdgeschoss."
+Button 1 OG is a kind of Button.
+After pushing Button 1 OG:
+	now the player is in  Elevator1_e0;
+	say "Sie befinden sich im ersten Obergeschoss."
+Button 2 OG is a kind of Button.
+After pushing Button 2 OG:
+	now the player is in Elevator2_e0;
+	say "Sie befinden sich im zweiten Obergeschoss."
+Button EG, Button 1 OG, Button 2 OG is in every elevator.
+
+Hallway0_e0 is a hallway.
+Stairway0_e0 is a stairway.
+Stairway0_e0 is north of Hallway0_e0.
+
+Hallway0_e1 is a hallway.
+WC0_e0 is a restroomW.
+WC0_e0 is north of Hallway0_e1.
+
+Hallway0_e2 is a hallway.
+Elevator0_e0 is an elevator.
+Elevator0_e0 is north of Hallway0_e2.
+
+Hallway0_e3 is a hallway.
+Raum 025b is a room.
+Raum 029 is a room. "Das Sekretariat."
+Raum 030 is a room.
+Raum 028b is a room.
+Raum 029 is south of Hallway0_e3.
+Raum 030 is west of Raum 029.
+Raum 028b is east of Raum 029.
+Raum 025b is north of Hallway0_e3.
+Hinterraum 025b is north of Raum 025b. "Ein namenloser Raum hinter Raum 025b."
+
+Hallway0_e4 is a hallway.
+Raum 024 is a room.
+Raum 024 is north of Hallway0_e4.
+
+Hallway0_e5 is a hallway.
+Raum 028a is a room. "Besprechungsraum."
+Hinterraum 028a is east of Raum 028a. "Ein namenloser Raum hinter Raum 028a."
+Raum 025 is a room.
+Raum 025 is north of Hallway0_e5.
+Raum 028a is south of Hallway0_e5.
+
+Hallway0_e6 is a hallway.
+Raum 026 is a room.
+Raum 026 is southwest of Hallway0_e6.
+Raum 026 is southeast of Hallway0_e6.
+
+Hallway0_e7 is a hallway.
+Raum 008 is a room.
+Raum 008 is west of Hallway0_e7.
+
+Hallway0_e8 is a hallway.
+Raum 007 is a room.
+WC0_e1 is a restroomM.
+Raum 007 is east of Hallway0_e8.
+WC0_e1 is west of Hallway0_e8.
+
+Hallway0_e9 is a hallway.
+Raum 006 is a laboratory.
+Raum 010 is a room.
+Raum 006 is east of Hallway0_e9.
+Raum 010 is west of Hallway0_e9.
+
+Hallway0_e10 is a hallway.
+Raum 011 is a room.
+Raum 011 is west of Hallway0_e10.
+
+Hallway0_e11 is a hallway.
+Raum 012 is a room.
+Raum 005 is a laboratory.
+Raum 012 is west of Hallway0_e11.
+Raum 005 is east of Hallway0_e11.
+
+Hallway0_e12 is a hallway.
+Stairway0_e1 is a stairway.
+Stairway0_e1 is west of Hallway0_e12.
+
+Hallway0_e13 is a hallway.
+Raum 001 is a room.
+Raum 004 is a room.
+Raum 001 is west of Hallway0_e13.
+Raum 004 is east of Hallway0_e13.
+
+Hallway0_e14 is a hallway.
+Raum 002 is a room.
+Raum 003 is a room.
+Raum 002 is west of Hallway0_e14.
+Raum 003 is east of Hallway0_e14.
+
+Hallway0_e1 is east of Hallway0_e0.
+Hallway0_e2 is east of Hallway0_e1.
+Hallway0_e3 is east of Hallway0_e2.
+Hallway0_e4 is east of Hallway0_e3.
+Hallway0_e5 is east of Hallway0_e4.
+Hallway0_e6 is east of Hallway0_e5.
+Hallway0_e7 is north of Hallway0_e6.
+Hallway0_e8 is north of Hallway0_e7.
+Hallway0_e9 is north of Hallway0_e8.
+Hallway0_e10 is north of Hallway0_e9.
+Hallway0_e11 is north of Hallway0_e10.
+Hallway0_e12 is north of Hallway0_e11.
+Hallway0_e13 is north of Hallway0_e12.
+Hallway0_e14 is north of Hallway0_e13.
+
+[EG join]
+Unterm Torbogen is an outside room.
+Unterm Torbogen is west of Hallway0_e0.
+Unterm Torbogen is east of Hallway0_w0.
+[Innenhof is north of Unterm Torbogen and west of Stairway0_e1 and east of Stairway0_w1 and northwest of Elevator0_e0.]
+
+[1.OG west]
+Hallway1_w0 is a hallway.
+Raum 134 is a room.
+Raum 135 is a room.
+Raum 134 is south of Hallway1_w0.
+Raum 135 is north of Hallway1_w0.
+
+Hallway1_w1 is a hallway.
+Stairway1_w0 is a stairway.
+Stairway1_w0 is north of Hallway1_w1.
+
+Hallway1_w2 is a hallway.
+WC1_w0 is a restroomM.
+Labor 151 is a laboratory.
+WC1_w0 is north of Hallway1_w2.
+Labor 151 is south of Hallway1_w2.
+
+Hallway1_w3 is a hallway.
+Raum 158 is a room.
+Hoersaal 152 is a room.
+Raum 158 is north of Hallway1_w3.
+Hoersaal 152 is southwest of Hallway1_w3.
+
+Hallway1_w4 is a hallway.
+Labor 157 is a laboratory.
+Labor 157 is north of Hallway1_w4.
+Hoersaal 152 is southeast of Hallway1_w4.
+
+Hallway1_w5 is a hallway.
+Raum 156 is a room.
+Raum 153 is a room.
+Raum 156 is north of Hallway1_w5.
+Raum 153 is south of Hallway1_w5.
+
+Hallway1_w6 is a hallway. "Hier gibt es Kaffe- und Snackautomaten sowie einen Lernbereich."
+
+Raum 154 is a room.Labor 155 is a laboratory.
+ZS CS-SQ is a room. "Hier befinden sich die Räume des CareerService. Kein Zutritt."
+Raum 154 is southeast of Hallway1_w6.
+Labor 155 is southwest of Hallway1_w6.
+ZS CS-SQ is north of Hallway1_w6.
+
+Hallway1_w1 is west of Hallway1_w0.
+Hallway1_w2 is west of Hallway1_w1.
+Hallway1_w3 is west of Hallway1_w2.
+Hallway1_w4 is west of Hallway1_w3.
+Hallway1_w5 is west of Hallway1_w4.
+Hallway1_w6 is west of Hallway1_w5.
+
+
+[1OG Ost]
+
+Hallway1_e0 is a hallway.
+Kaminzimmer 136 is a room.
+FARA 137 is a room.
+Poolraum Rechenzentrum 132 is a room.
+The Poolraum Rechenzentrum 132 is east from the Raum 133.
+The Hallway1_e0 is south of the FARA 137.
+The Hallway1_e0 is north of the Poolraum Rechenzentrum 132
+
+Raum 133 is a room.
+
+Hallway1_e1 is a hallway.
+Stairway1_e0 is a stairway.
+The Stairway1_e0 is north of the Hallway1_e1.
+
+Hallway1_e2 is a hallway.
+WC1_e0 is a restroomM.
+Raum 131 is a room.
+The WC1_e0 is north of the Hallway1_e2.
+The Raum 131 is south of the Hallway1_e2.
+
+Hallway1_e3 is a hallway.
+Elevator1_e0 is an elevator.
+The Elevator1_e0 is north of the Hallway1_e3.
+
+Hallway1_e4 is a hallway.
+Raum 124 is a room.
+Raum 130 is a room.
+The Raum 124 is north of the Hallway1_e4.
+The Raum 130 is south of the Hallway1_e4 .
+
+Hallway1_e5 is a hallway.
+Raum 125 is a room.
+Labor 129 is a laboratory.
+The Raum 125 is north of the Hallway1_e5.
+The Labor 129 is southeast of the Hallway1_e5 .
+
+Hallway1_e6 is a hallway.
+Raum 126 is a room.
+The Raum 126 is north of the Hallway1_e6.
+The Labor 129 is southwest of the Hallway1_e6.
+
+Hallway1_e7 is a hallway.
+Hoersaal127 is a room.
+The Hoersaal127 is southwest of the  Hallway1_e7.
+The Hoersaal127 is southeast of the  Hallway1_e7.
+
+Hallway1_e8 is a hallway.
+Raum 108 is a room.
+The Raum 108 is west of the Hallway1_e8.
+
+Hallway1_e9 is a hallway.
+Raum 109 is a room.
+Labor 107 is a laboratory.
+The Raum 109 is west of the Hallway1_e9.
+The Labor 107 is east of the Hallway1_e9.
+
+Hallway1_e10 is a hallway.
+Raum 110 is a room.
+Labor 106 is a laboratory.
+The Raum 110 is southwest of the Hallway1_e10.
+The Raum 110 is northwest of the Hallway1_e10.
+The Labor 106 is southeast of the Hallway1_e10.
+The Labor 106 is northeast of the Hallway1_e10.
+
+Hallway1_e11 is a hallway.
+Stairway1_e1 is a stairway.
+The Stairway1_e1 is west of the Hallway1_e11.
+
+Hallway1_e12 is a hallway.
+Labor 101 is a laboratory.
+Raum 105 is a room.
+The Labor 101 is west of the Hallway1_e12.
+The Raum 105 is east of the Hallway1_e12.
+
+Hallway1_e13 is a hallway.
+Labor 104 is a laboratory.
+The Labor 104 is east of the Hallway1_e13.
+
+Hallway1_e14 is a hallway.
+Labor 102 is a laboratory.
+Labor 103 is a laboratory.
+The Labor 102 is west of the Hallway1_e14.
+The Labor 103 is east of the Hallway1_e14.
+
+The Hallway1_e0 is east of the Kaminzimmer 136.
+The Hallway1_e1 is east of the Hallway1_e0.
+The Hallway1_e2 is east of the Hallway1_e1.
+The Hallway1_e3 is east of the Hallway1_e2.
+The Hallway1_e4 is east of the Hallway1_e3.
+The Hallway1_e5 is east of the Hallway1_e4.
+The Hallway1_e6 is east of the Hallway1_e5.
+The  Hallway1_e7 is east of the Hallway1_e6.
+The Hallway1_e8 is north of the  Hallway1_e7.
+The Hallway1_e9 is north of the Hallway1_e8.
+The Hallway1_e10 is north of the Hallway1_e9.
+The Hallway1_e11 is north of the Hallway1_e10.
+The Hallway1_e12 is north of the Hallway1_e11.
+The Hallway1_e13 is north of the Hallway1_e12.
+The Hallway1_e14 is north of the Hallway1_e13.
+
+[1. OG join]
+Kaminzimmer 136 is east of Hallway1_w0.
+
+[2.OG west]
+Hallway2_w0 is a hallway.
+Stairway2_w0 is a stairway.
+Hörsaal 252 is a room.
+Lernbereich is a room.
+Hinterraum Lernbereich is a room. "Ein namenloser Raum hinterm Lernbereich."
+Hinterraum Lernbereich is north of Lernbereich.
+Hörsaal 252 is west of Hallway2_w0.
+Lernbereich is east of Hallway2_w0.
+Stairway2_w0 is north of Hallway2_w0.
+
+
+
+[2.OG east]
+Hallway2_e-3 is a hallway.
+Hallway2_e-3 is east of Lernbereich.
+Seminar 224 is a room.
+Seminar 224 is east of Hallway2_e-3.
+
+Hallway2_e-2 is a hallway and north of Hallway2_e-3.
+Stairway2_e0 is a stairway.
+Stairway2_e0 is north of Hallway2_e-2.
+
+Hallway2_e-1 is a hallway and northeast of Hallway2_e-2.
+Elevator2_e0 is a elevator.
+Elevator2_e0 is inside of Hallway2_e-2.
+
+Hörsaal 223 is a room.
+Hörsaal 223 is southeast of Hallway2_e-1.
+Hörsaal 223 is northeast of Seminar 224.
+
+Hallway2_e0 is a hallway.
+WC2_e0 is a restroomW.
+Hallway2_e0 is east of Hörsaal 223.
+WC2_e0 is north of Hallway2_e0.
+
+
+Hallway2_e1 is a hallway.
+Raum 210 is a room. 
+Raum 209 is a room.
+Raum 210 is west of Hallway2_e1.
+Raum 209 is east of Hallway2_e1.
+
+Hallway2_e2 is a hallway.
+Raum 208 is a room.
+Raum 208 is east of Hallway2_e2.
+
+Hallway2_e3 is a hallway.
+Raum 213 is a room.
+Raum 207 is a room.
+Raum 213 is west of Hallway2_e3.
+Raum 207 is east of Hallway2_e3.
+
+Hallway2_e4 is a hallway.
+Raum 214 is a room.
+Raum 206 is a room.
+Raum 214 is west of Hallway2_e4.
+Raum 206 is east of Hallway2_e4.
+
+Hallway2_e5 is a hallway.
+Raum 215 is a room.
+Raum 205 is a room.
+Raum 215 is west of Hallway2_e5.
+Raum 205 is east of Hallway2_e5.
+
+Hallway2_e6 is a hallway.
+Stairway2_e1 is a stairway.
+Stairway2_e1 is west of Hallway2_e6.
+
+Hallway2_e7 is a stairway.
+Raum 201 is a room.
+Poolraum 203 is a room.
+Raum 204 is a room.
+Raum 201 is west of Hallway2_e7.
+Poolraum 203 is north of Hallway2_e7.
+Raum 204 is east of Hallway2_e7.
+
+Hallway2_e1 is southeast of Hallway2_e0.
+Hallway2_e2 is east of Hallway2_e0.
+Hallway2_e2 is north of Hallway2_e1.
+Hallway2_e3 is north of Hallway2_e2.
+Hallway2_e4 is north of Hallway2_e3.
+Hallway2_e5 is north of Hallway2_e4.
+Hallway2_e6 is north of Hallway2_e5.
+Hallway2_e7 is north of Hallway2_e6.
+
+[Join floors]
+[Da Inform 7 durch unsere Struktur 5 Stockwerke erstellt, ist es Sinnvoll, zur besseren Übersicht auf der Karte diesen Abschnitt auszukommentieren]
+
+Stairway0_e0 is below Stairway1_e0.
+Stairway0_w0 is below Stairway1_w0.
+Stairway0_e1 is below Stairway1_e1.
+
+Stairway1_w0 is below Stairway2_w0.
+Stairway1_e0 is below Stairway2_e0.
+Stairway1_e1 is below Stairway2_e1.
+
+
+[Raum 029door is a door. Raum 029door is south of Hallway0_e3. South of the Raum 029door is a room called Raum 029.
+
+The player wear a backpack.
+backpack is a container.
+The carrying capacity of the backpack is 3.
+
+
+
+Locker is a container in the Kaminzimmer 136. The description is "Spind". It is openable, closed and fixed in place.
+
+
+
+Key A is a thing. It unlocks lock.
+Key A is in the locker. The description is "Sekretariat's Schlüssel".
+Key B is a thing. The Key B unlocks panel.
+Key B is in the locker. The description is "Studentenausweis".
+Key C is a thing.
+Key C is in the locker. The description is "Schlüssel ".
+
+
+
+Raum 029door is locked.
+lock is a part of the Raum 029 door.The description is "Schloss"
+
+
+Instead of unlocking the lock with Key A:
+   	 if the Raum 029 door is locked begin;
+   		 say "Offen!";
+   		 now the Raum 029 door is unlocked;
+   	 otherwise;
+   		 say "Zu!";
+   		 now the Raum 029 door is locked;
+   	 end if.]
+
