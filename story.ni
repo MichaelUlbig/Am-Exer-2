@@ -129,7 +129,7 @@ WC0_e0 is a restroomW in EG.
 WC0_e0 is north of Hallway0_e1.
 
 Hallway0_e2 is a hallway in EG.
-Elevator0_e0 is an elevator.
+Elevator0_e0 is an elevator in EG.
 Elevator0_e0 is north of Hallway0_e2.
 
 Hallway0_e3 is a hallway in EG.
@@ -141,6 +141,7 @@ Raum 029 is south of Hallway0_e3.
 Raum 030 is west of Raum 029.
 Raum 028b is east of Raum 029.
 Raum 025b is north of Hallway0_e3.
+Hinterraum 025b is a room in EG.
 Hinterraum 025b is north of Raum 025b. "Ein namenloser Raum hinter Raum 025b."
 
 Hallway0_e4 is a hallway in EG.
@@ -149,6 +150,7 @@ Raum 024 is north of Hallway0_e4.
 
 Hallway0_e5 is a hallway in EG.
 Raum 028a is a room in EG. "Besprechungsraum."
+Hinterraum 028a is a room in EG.
 Hinterraum 028a is east of Raum 028a. "Ein namenloser Raum hinter Raum 028a."
 Raum 025 is a room in EG.
 Raum 025 is north of Hallway0_e5.
@@ -294,7 +296,7 @@ The WC1_e0 is north of the Hallway1_e2.
 The Raum 131 is south of the Hallway1_e2.
 
 Hallway1_e3 is a hallway in Erstes OG.
-Elevator1_e0 is an elevator.
+Elevator1_e0 is an elevator in Erstes OG.
 The Elevator1_e0 is north of the Hallway1_e3.
 
 Hallway1_e4 is a hallway in Erstes OG.
